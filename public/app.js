@@ -35,7 +35,6 @@ function initVersions() {
   manSel.innerHTML = html;
 }
 
-// Background Animation (Particles)
 function initCanvas() {
   const canvas = document.getElementById('bg-canvas');
   if (!canvas) return;
@@ -83,7 +82,6 @@ function initCanvas() {
   draw();
 }
 
-// Minecraft Color Parser
 function parseColors(text) {
   if (!text) return '';
   const parts = text.split(/(§[0-9a-flonmr])/i);

@@ -30,8 +30,6 @@ class BotController extends EventEmitter {
     const rootDir = path.join(__dirname, '..', '..');
     const botScript = path.join(__dirname, 'worker.js');
     
-    // We pass config via environment variables or a temporary file. 
-    // Writing to a temporary config file for the bot worker:
     const fs = require('fs');
     const tempConfigPath = path.join(rootDir, 'bot_runtime_config.json');
     
@@ -123,7 +121,6 @@ class BotController extends EventEmitter {
   }
 
   parseStats(line) {
-    // Expected formats: STATS:SPAWN:username, STATS:KICK:username, STATS:MSG:username:msg, STATS:ERR:username:err
     const parts = line.split(':');
     if (parts.length < 2) return;
     const type = parts[1];

@@ -12,7 +12,6 @@ const rootDir = path.join(__dirname, '..', '..');
 const configPath = path.join(rootDir, 'config.json');
 let config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
-// Load locales
 const locales = {
   en: JSON.parse(fs.readFileSync(path.join(rootDir, 'locales', 'en.json'), 'utf8')),
   ru: JSON.parse(fs.readFileSync(path.join(rootDir, 'locales', 'ru.json'), 'utf8'))

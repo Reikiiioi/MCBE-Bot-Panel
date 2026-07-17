@@ -5,8 +5,10 @@
 **The Ultimate Cloudflare-Themed Minecraft Bedrock Stress Testing Framework**
 
 [![Node.js](https://img.shields.io/badge/Node.js-v18+-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![Protocol](https://img.shields.io/badge/Bedrock_Protocol-0.14_--_1.26+-blue?style=for-the-badge&logo=minecraft)](https://github.com/PrismarineJS/bedrock-protocol)
+[![Protocol](https://img.shields.io/badge/Bedrock_Protocol-1.16_--_1.26+-blue?style=for-the-badge&logo=minecraft)](https://github.com/PrismarineJS/bedrock-protocol)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+[Русская Версия](github/README.md)
 
 </div>
 
@@ -93,6 +95,8 @@ Creating Minecraft client instances requires significant RAM and CPU.
 
 ---
 
-## 🤝 Credits
+## 🤝 Credits & Third-Party Libraries
 
-Developed and maintained by **[Reikiiioi](https://github.com/Reikiiioi)**.
+- **Developer:** [Reikiiioi](https://github.com/Reikiiioi)
+- **Core Library:** [bedrock-protocol](https://github.com/PrismarineJS/bedrock-protocol) by the PrismarineJS team (MIT License)
+- **Web Technologies:** [Express](https://github.com/expressjs/express) (MIT License), [Socket.io](https://github.com/socketio/socket.io) (MIT License), [bcryptjs](https://github.com/dcodeIO/bcrypt.js) (MIT License)

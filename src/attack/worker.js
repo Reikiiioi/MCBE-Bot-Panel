@@ -15,7 +15,6 @@ async function log(message) {
   try {
     await fs.appendFile('bot.log', `${logMessage}\n`, { encoding: 'utf8', flag: 'a' });
   } catch (e) {
-    // Ignore logging errors to prevent crash loop
   }
 }
 
@@ -121,7 +120,6 @@ async function createBot(options) {
       }
     }
     
-    // Config could be undefined if run manually without config, fallback to default 30
     const delay = config?.timing?.finalDelaySeconds || 30;
     await sleep(delay * 1000);
     client.close();
@@ -133,19 +131,15 @@ async function createBot(options) {
 
   client.on('kick', (reason) => {
     console.log(`STATS:KICK:${options.username}`);
-    // Optional: reconnect logic here
-    // createBot(options);
   });
 
   client.on('packet_error', (err) => {
-    // Suppress heavy logging to console to avoid lag, just log to file
     log(`Packet error for ${options.username}: ${err.message}`);
   });
 }
 
 if (!isMainThread) {
   const { botOptions, botCount, delaySeconds } = workerData;
-  // Make config available in worker
   configPath = workerData.configPath;
   if (configPath && fsSync.existsSync(configPath)) {
     config = JSON.parse(fsSync.readFileSync(configPath, 'utf8'));
