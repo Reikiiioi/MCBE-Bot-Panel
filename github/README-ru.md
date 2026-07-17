@@ -38,8 +38,8 @@ MineDDoS v2 — это высокооптимизированная, модул�
 
 **1. Клонируйте репозиторий:**
 ```bash
-git clone https://github.com/Reikiiioi/Minecraft-Bedrock-Edition-Bot-Panel.git
-cd Minecraft-Bedrock-Edition-Bot-Panel
+git clone https://github.com/Reikiiioi/MCBE-Bot-Panel.git
+cd MCBE-Bot-Panel
 ```
 
 **2. Запустите проект:**

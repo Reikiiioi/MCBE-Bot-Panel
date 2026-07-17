@@ -38,8 +38,8 @@ You must have [Node.js](https://nodejs.org/) (Version 18 or higher) installed on
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/Reikiiioi/MineDDoS.git
-cd MineDDoS
+git clone https://github.com/Reikiiioi/MCBE-Bot-Panel.git
+cd MCBE-Bot-Panel
 ```
 
 **2. Start the project:**
