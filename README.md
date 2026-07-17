@@ -8,7 +8,7 @@
 [![Protocol](https://img.shields.io/badge/Bedrock_Protocol-1.16_--_1.26+-blue?style=for-the-badge&logo=minecraft)](https://github.com/PrismarineJS/bedrock-protocol)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-[Русская Версия](github/README.md)
+[Русская Версия](github/README-ru.md)
 
 </div>
 
@@ -25,10 +25,9 @@ MineDDoS v2 is a highly optimized, modular, and cross-platform command-and-contr
 - **🌐 Modern Web Panel:** A beautiful, responsive, monochrome UI with background animations and live interactive charts.
 - **🚀 High Performance:** Powered by Node.js Worker Threads, enabling you to spawn hundreds of bots across multiple CPU cores without bottlenecking.
 - **🌍 Full Localization:** Built-in dynamic i18n support for English and Russian.
-- **🎮 All Bedrock Versions:** Full support for 50+ protocol versions, from `0.14.3` all the way to `1.26.30`.
+- **🎮 All Bedrock Versions:** Full support for 50+ protocol versions, from `1.16.201` all the way to `1.26.30`.
 - **🎨 Minecraft Color Parser:** Server logs, MOTDs, and chats are parsed and rendered with authentic `§` Minecraft colors right in your browser.
 - **🤖 Manual Bot Control:** Connect a single bot manually to spy on the server chat and execute commands directly from the web panel.
-- **🛡️ Crash Protection:** Enhanced RakNet connection handlers to prevent the bot pool from crashing against heavily modded or protected servers (e.g., WaterdogPE).
 
 ---
 
@@ -98,5 +97,5 @@ Creating Minecraft client instances requires significant RAM and CPU.
 ## 🤝 Credits & Third-Party Libraries
 
 - **Developer:** [Reikiiioi](https://github.com/Reikiiioi)
-- **Core Library:** [bedrock-protocol](https://github.com/PrismarineJS/bedrock-protocol) by the PrismarineJS team (MIT License)
-- **Web Technologies:** [Express](https://github.com/expressjs/express) (MIT License), [Socket.io](https://github.com/socketio/socket.io) (MIT License), [bcryptjs](https://github.com/dcodeIO/bcrypt.js) (MIT License)
+- **Core Library:** [bedrock-protocol](https://github.com/PrismarineJS/bedrock-protocol) by the PrismarineJS team
+- **Web Technologies:** [Express](https://github.com/expressjs/express), [Socket.io](https://github.com/socketio/socket.io), [bcryptjs](https://github.com/dcodeIO/bcrypt.js)
