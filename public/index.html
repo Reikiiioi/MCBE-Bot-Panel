@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineDDoS Login</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box glass-panel">
+      <div class="logo">
+        <span class="logo-mine">Mine</span><span class="logo-ddoss">DDoS</span>
+      </div>
+      <div class="subtitle" id="t-login-title">Control Panel v2.0</div>
+      
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" onkeypress="if(event.key==='Enter') login()">
+      </div>
+      <button onclick="login()" id="t-login-btn">Sign In</button>
+      <div id="error-msg" class="error"></div>
+    </div>
+  </div>
+
+  <script>
+    async function initLocale() {
+      try {
+        const loginRes = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: '' })
+        });
+        const loginData = await loginRes.json();
+        if (loginData.success) {
+          localStorage.setItem('mineddos_token', loginData.token);
+          window.location.href = '/dashboard.html';
+          return;
+        }
+
+        const res = await fetch('/api/locale');
+        const t = await res.json();
+        document.title = "MineDDoS - " + t.ui.title_login;
+        document.getElementById('t-login-title').innerText = t.ui.title_login;
+        document.getElementById('t-login-btn').innerText = t.ui.login_btn;
+        document.getElementById('password').placeholder = t.ui.pass_placeholder;
+      } catch (e) {}
+    }
+
+    async function login() {
+      const pwd = document.getElementById('password').value;
+      const err = document.getElementById('error-msg');
+      err.innerText = '';
+      
+      try {
+        const res = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: pwd })
+        });
+        const data = await res.json();
+        
+        if (data.success) {
+          localStorage.setItem('mineddos_token', data.token);
+          window.location.href = '/dashboard.html';
+        } else {
+          err.innerText = data.error;
+        }
+      } catch (e) {
+        err.innerText = 'Connection error';
+      }
+    }
+    
+    initLocale();
+  </script>
+</body>
+</html>

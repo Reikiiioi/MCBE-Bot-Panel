@@ -1,0 +1,63 @@
+{
+  "setup": {
+    "welcome": "Welcome to MineDDoS setup",
+    "choose_lang": "Выберите язык / Choose language (ru/en): ",
+    "pass_prompt": "Create a password for the panel: ",
+    "pass_short": "Password too short. Using 'admin'",
+    "done": "Setup complete! Starting server...",
+    "deps_installing": "Installing dependencies...",
+    "deps_installed": "Dependencies installed."
+  },
+  "ui": {
+    "title_login": "Login",
+    "login_btn": "Sign In",
+    "pass_placeholder": "Password",
+    "overview": "Overview",
+    "attack": "Attack",
+    "manual": "Manual Control",
+    "logs": "Logs",
+    "logout": "Logout",
+    "status": "Status",
+    "total_bots": "Total Bots",
+    "online": "Online",
+    "kicked": "Kicked",
+    "msgs_sent": "Messages",
+    "errors": "Errors",
+    "uptime": "Uptime",
+    "start_attack": "Start Attack",
+    "stop_attack": "Stop All",
+    "params": "Parameters",
+    "host": "IP / Domain",
+    "port": "Port",
+    "version": "Version",
+    "username": "Bot Username",
+    "count": "Bot Count",
+    "threads": "Threads",
+    "delay": "Start Delay (s)",
+    "final_delay": "Final Delay (s)",
+    "messages": "Messages",
+    "msg_placeholder": "New message",
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "clear": "Clear",
+    "server_chat": "Server Chat",
+    "commands": "Commands",
+    "send": "Send",
+    "cmd_placeholder": "Message..."
+  },
+  "status": {
+    "stopped": "Stopped",
+    "running": "Running",
+    "error": "Error",
+    "connected": "Connected",
+    "disconnected": "Disconnected"
+  },
+  "bot": {
+    "started": "Bots started",
+    "stopped": "Bots stopped",
+    "spawned": "Bot spawned on server",
+    "kicked": "Bot kicked",
+    "err": "Error",
+    "msg_sent": "Sent message"
+  }
+}
